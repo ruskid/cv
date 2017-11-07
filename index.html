@@ -42,7 +42,7 @@ html, body {
 }
 
 .demin-avatar-container > .demin-avatar {
-   border-radius: 50%;
+    border-radius: 50%;
 }
 
 .demin-name {
@@ -105,22 +105,36 @@ html, body {
 }
 
 /* responsive gif iframe */
-
-.iframe-container {
-    position: relative;    
-    top: 0;
-    padding-top: 35px;
-    padding-bottom: 56.25%;
-    overflow: hidden;
-}
-.iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+.gif-image {
     width: 100%;
-    height: 100%;
+    display: none;
 }
 
+@media only screen and (max-width: 640px) {
+    .centered-parent {
+        position: relative;
+        left: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .demin-summary {
+        font-size: 0.8em;
+    }
+   
+}
+
+@media only screen and (max-width: 400px) {
+    .demin-social-item {
+        font-size: 0.7em;
+    }
+    
+     .demin-summary {
+        font-size: 0.7em;
+    }
+}
 	</style>
 	
 	</head>
@@ -203,9 +217,10 @@ html, body {
          role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
-        <div class="iframe-container">
-              <img src="/files/gyphy1.gif" alt="Loading" title="Loading" />
-        </div>
+
+
+              <img src="/files/giphy1.gif" class="gif-image gif-image-1" alt="Loading" title="Loading" />
+              <img src="/files/giphy2.gif" class="gif-image gif-image-2" alt="Loading" title="Loading" />
     </div>
   </div>
 </div>
@@ -218,13 +233,25 @@ html, body {
                 $('[data-toggle="tooltip"]').tooltip();
             });
 
+            var count = 1;
+            var total_gifs = 2;
+
             $(document).mouseleave(function () {
+                if(count < total_gifs) {
+                    count++;
+                } else {
+                    count = 1;
+                }
+                
+                $('.gif-image').hide();
+                $('.gif-image-' + count).show();
+
                 $('#myModal').modal('show');
             });
 
             $(document).mouseenter(function () {
-                //$('.modal-backdrop').remove(); //fix multiple backdrops
-                //$('#myModal').modal('hide');
+                $('.modal-backdrop').remove(); //fix multiple backdrops
+                $('#myModal').modal('hide');
             });
             
         </script>
