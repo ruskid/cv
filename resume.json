@@ -3,7 +3,7 @@
         "name": "Victor Demin",
         "username": "ruskid",
         "label": "Full Stack Developer",
-        "picture": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAycAAAAJDhiZjI1YmMyLTVlYmQtNDE2Zi1hNDcyLWFhNGVlZmM2M2QzMg.jpg",
+        "picture": "/files/avatar.jpg",
         "email": "demmbox@gmail.com",
         "phone": "(+34) 661887353",
         "website": "",
@@ -42,14 +42,6 @@
                 "icon": "fa fa-map",
                 "url": "https://nomadlist.com/@demin",
                 "title": "Follow me on NomadList"
-            }
-        ],
-        "gifs": [
-            {
-                "network": "Github",
-                "icon": "fa fa-github",
-                "url": "https://github.com/ruskid",
-                "title": "See my code on Github"
             }
         ]
     }

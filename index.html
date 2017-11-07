@@ -15,7 +15,7 @@
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Victor Demin a.k.a ruskid Software Developer, Barcelona" />
         <meta property="og:description" content="I am a Full Stack Developer and Entrepreneur interested in remote jobs and opportunities to build something useful and great. My passion is product development from scratch that includes good coding, brand development, usability, SEO. OpenSource lover" />
-        <meta property="og:image" content="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAycAAAAJDhiZjI1YmMyLTVlYmQtNDE2Zi1hNDcyLWFhNGVlZmM2M2QzMg.jpg" />
+        <meta property="og:image" content="/files/avatar.jpg" />
 
         <link type="image/x-icon" href="/favicon.ico?v=2" rel="icon">
 
@@ -124,6 +124,9 @@ html, body {
         font-size: 0.8em;
     }
    
+    .demin-extra-information {
+        font-size: 0.8em;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -145,7 +148,7 @@ html, body {
                 <div class="centered-child">
                         
                                 <div class="demin-avatar-container">
-                                    <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAycAAAAJDhiZjI1YmMyLTVlYmQtNDE2Zi1hNDcyLWFhNGVlZmM2M2QzMg.jpg" width="150" height="150" class="demin-avatar" />
+                                    <img src="/files/avatar.jpg" width="150" height="150" class="demin-avatar" />
                                 </div>
                             
                             <h1 class="demin-name">Victor Demin</h1>
@@ -156,7 +159,7 @@ html, body {
                             
                         	<ul class="demin-social-links">
                         		<li class="demin-social-item">
-                                            <a href="https://github.com/ruskid" data-toggle="tooltip"
+                                            <a href="https://github.com/ruskid" target="_blank" data-toggle="tooltip"
                                                 data-placement="top" title="See my code on Github">
                                                 <span class="fa-stack fa-lg">
                                                     <i class="fa fa-circle fa-stack-2x circle-icon"></i>
@@ -165,7 +168,7 @@ html, body {
                                             </a>
                         		</li>
                         		<li class="demin-social-item">
-                                            <a href="https://www.linkedin.com/in/victordemin/" data-toggle="tooltip"
+                                            <a href="https://www.linkedin.com/in/victordemin/" target="_blank" data-toggle="tooltip"
                                                 data-placement="top" title="Follow me on Linkedin">
                                                 <span class="fa-stack fa-lg">
                                                     <i class="fa fa-circle fa-stack-2x circle-icon"></i>
@@ -174,7 +177,7 @@ html, body {
                                             </a>
                         		</li>
                         		<li class="demin-social-item">
-                                            <a href="https://www.facebook.com/ruskid" data-toggle="tooltip"
+                                            <a href="https://www.facebook.com/ruskid" target="_blank" data-toggle="tooltip"
                                                 data-placement="top" title="Follow me on Facebook">
                                                 <span class="fa-stack fa-lg">
                                                     <i class="fa fa-circle fa-stack-2x circle-icon"></i>
@@ -183,7 +186,7 @@ html, body {
                                             </a>
                         		</li>
                         		<li class="demin-social-item">
-                                            <a href="https://angel.co/demin" data-toggle="tooltip"
+                                            <a href="https://angel.co/demin" target="_blank" data-toggle="tooltip"
                                                 data-placement="top" title="Follow me on AngelList">
                                                 <span class="fa-stack fa-lg">
                                                     <i class="fa fa-circle fa-stack-2x circle-icon"></i>
@@ -192,7 +195,7 @@ html, body {
                                             </a>
                         		</li>
                         		<li class="demin-social-item">
-                                            <a href="https://nomadlist.com/@demin" data-toggle="tooltip"
+                                            <a href="https://nomadlist.com/@demin" target="_blank" data-toggle="tooltip"
                                                 data-placement="top" title="Follow me on NomadList">
                                                 <span class="fa-stack fa-lg">
                                                     <i class="fa fa-circle fa-stack-2x circle-icon"></i>
@@ -221,6 +224,8 @@ html, body {
 
               <img src="/files/giphy1.gif" class="gif-image gif-image-1" alt="Loading" title="Loading" />
               <img src="/files/giphy2.gif" class="gif-image gif-image-2" alt="Loading" title="Loading" />
+              <img src="/files/giphy3.gif" class="gif-image gif-image-3" alt="Loading" title="Loading" />
+
     </div>
   </div>
 </div>
@@ -234,7 +239,7 @@ html, body {
             });
 
             var count = 1;
-            var total_gifs = 2;
+            var total_gifs = 3;
 
             $(document).mouseleave(function () {
                 if(count < total_gifs) {
