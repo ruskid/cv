@@ -1,2 +1,5 @@
 # netbeans project files
 nbproject
+
+# node modules files
+node_modules
