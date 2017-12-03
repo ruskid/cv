@@ -23,13 +23,13 @@
                 "network": "Linkedin",
                 "icon": "fa fa-linkedin",
                 "url": "https://www.linkedin.com/in/victordemin/",
-                "title": "Follow me on Linkedin"
+                "title": "Connect me on Linkedin"
             },
             {
                 "network": "Facebook",
                 "icon": "fa fa-facebook",
                 "url": "https://www.facebook.com/ruskid",
-                "title": "Follow me on Facebook"
+                "title": "Add me on Facebook"
             },
             {
                 "network": "AngelList",
@@ -42,6 +42,12 @@
                 "icon": "fa fa-map",
                 "url": "https://nomadlist.com/@demin",
                 "title": "Follow me on NomadList"
+            },
+            {
+                "network": "Twitter",
+                "icon": "fa fa-twitter",
+                "url": "https://twitter.com/VictorDemin",
+                "title": "Follow me on Twitter"
             }
         ]
     }
