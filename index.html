@@ -5,17 +5,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
 	
-	<title>
-            Victor Demin a.k.a ruskid Software Developer, Barcelona
-        </title>
-
-        <meta name="description" content="I am a Full Stack Developer and Entrepreneur interested in remote jobs and opportunities to build something useful and great. My passion is product development from scratch that includes good coding, brand development, usability, SEO. OpenSource lover">
-
-        <meta property="og:url" content="http://victordemin.com" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Victor Demin a.k.a ruskid Software Developer, Barcelona" />
-        <meta property="og:description" content="I am a Full Stack Developer and Entrepreneur interested in remote jobs and opportunities to build something useful and great. My passion is product development from scratch that includes good coding, brand development, usability, SEO. OpenSource lover" />
-        <meta property="og:image" content="/files/avatar.jpg" />
+            <title>Victor Demin - Developer &amp; Entrepreneur wannabe</title>
+            <meta name="description" content="I am a Full Stack Developer and Entrepreneur interested in remote jobs and opportunities to build something useful and great. My passion is product development from the egg to the apples">
+        
+            <meta property="og:title" content="Victor Demin - Developer &amp; Entrepreneur wannabe" />
+            <meta property="og:description" content="I am a Full Stack Developer and Entrepreneur interested in remote jobs and opportunities to build something useful and great. My passion is product development from the egg to the apples" />
+            <meta property="og:url" content="http://victordemin.com" />
+            <meta property="og:type" content="website" />
+            <meta property="og:image" content="/files/builder.jpg" />
+        
 
         <link type="image/x-icon" href="/favicon.ico?v=2" rel="icon">
 
@@ -23,49 +21,67 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	<style>
-	/*
-Inspired by thefamily
-*/
-html, body {
-    background: #1b0b37;
-    color: #FFF;
+            html, body {
+    color: white;
     font-family: Helvetica,Arial,sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     overflow-x: hidden;
     word-wrap: break-word;
     height: 100%;
     line-height: 1.4;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.demin-avatar-container {
-    text-align: center;
+.demin-main-container {
+    display: flex; 
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 .demin-avatar-container > .demin-avatar {
-    border-radius: 50%;
-}
-
-.demin-name {
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: -0.075rem;
-    width: 100%;
-}
-
-.demin-username {
-    text-align: center;
-    font-style: italic;
+    border-radius: 90%;
+    border: 4px solid black;
 }
 
 .demin-social-links {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-bottom: 1rem;
+    margin-left: 5px;
 }
 
 .demin-social-links > li {
-    display: inline-block;
+    display: block;
+}
+
+.demin-social-links > li:nth-child(1) {
+    margin-left: -60px;
+}
+
+.demin-social-links > li:nth-child(2) {
+    margin-left: -33px;
+}
+
+.demin-social-links > li:nth-child(3) {
+    margin-left: -15px;
+}
+
+.demin-social-links > li:nth-child(4) {
+    margin-left: -5px;
+}
+
+.demin-social-links > li:nth-child(7) {
+    margin-left: -5px;
+}
+
+.demin-social-links > li:nth-child(8) {
+    margin-left: -14px;
+}
+
+.demin-social-links > li:nth-child(9) {
+    margin-left: -29px;
 }
 
 .demin-social-links >li > a .circle-icon {
@@ -84,10 +100,59 @@ html, body {
     color: #FFFD01;
 }
 
-.demin-extra-information {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.demin-avatar-container > .demin-avatar.crazy {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.demin-name-container {
+    position: relative;
+    width: 0;
+    height: 0;
+}
+
+.demin-name {
+    position: absolute;
+    top: 0;
+    left: 0;    
+    font-weight: 700;
+    letter-spacing: -0.075rem;
+}
+
+.demin-summary {
+    position: absolute;
+    left: -60px;
+    bottom: -420px;
+    width: 200px;
+    font-size: 0.9em;
+    font-style: italic; 
+    background: black;
+}
+
+.demin-extra-info {
+    position: absolute;
+    left: -30px;
+    bottom: -220px;
+    font-size: 0.8em;
+    font-style: italic;
+    background: black;
+    color: #FFFD01;
+}
+
+.demin-extra-info > a {
+    color: #FFFD01;
+    text-decoration: underline;
+}
+
+.demin-extra-info > a:hover,
+.demin-extra-info > a:active, 
+.demin-extra-info > a:visited{
+    color: #FFFD01;
 }
 
 .centered-parent {
@@ -119,28 +184,10 @@ html, body {
         width: 100%;
         padding: 10px 20px;
     }
-
-    .demin-summary {
-        font-size: 0.8em;
-    }
-   
-    .demin-extra-information {
-        font-size: 0.8em;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .demin-social-item {
-        font-size: 0.7em;
-    }
-    
-     .demin-summary {
-        font-size: 0.7em;
-    }
 }
 
 .modal-content {
-    border: 5px solid #00f4d9;
+    border: 5px solid #FFF;
 }
 	</style>
 	
@@ -149,105 +196,130 @@ html, body {
 	<body>
 
         <div class="centered-parent">
-                <div class="centered-child">
-                        
-                                <div class="demin-avatar-container">
-                                    <img src="/files/avatar.jpg" width="150" height="150" class="demin-avatar" />
-                                </div>
-                            
+            <div class="centered-child">
+                
+                    <div class="demin-main-container">
+                        <div class="demin-name-container">
                             <h1 class="demin-name">Victor Demin</h1>
-                        
-                                <p class="demin-username">a.k.a ruskid</p>
-                        
-                                <p class="demin-summary">I am a Full Stack Developer and Entrepreneur interested in remote jobs and opportunities to build something useful and great. My passion is product development from scratch that includes good coding, brand development, usability, SEO. OpenSource lover</p>
-                            
-                        	<ul class="demin-social-links">
-                        		<li class="demin-social-item">
-                                            <a href="https://github.com/ruskid" target="_blank" data-toggle="tooltip"
-                                                data-placement="top" title="See my code on Github">
-                                                <span class="fa-stack fa-lg">
-                                                    <i class="fa fa-circle fa-stack-2x circle-icon"></i>
-                                                    <i class="fa fa-github fa-stack-1x network-icon"></i>
-                                                </span>
-                                            </a>
-                        		</li>
-                        		<li class="demin-social-item">
-                                            <a href="https://www.linkedin.com/in/victordemin/" target="_blank" data-toggle="tooltip"
-                                                data-placement="top" title="Connect me on Linkedin">
-                                                <span class="fa-stack fa-lg">
-                                                    <i class="fa fa-circle fa-stack-2x circle-icon"></i>
-                                                    <i class="fa fa-linkedin fa-stack-1x network-icon"></i>
-                                                </span>
-                                            </a>
-                        		</li>
-                        		<li class="demin-social-item">
-                                            <a href="https://www.facebook.com/ruskid" target="_blank" data-toggle="tooltip"
-                                                data-placement="top" title="Add me on Facebook">
-                                                <span class="fa-stack fa-lg">
-                                                    <i class="fa fa-circle fa-stack-2x circle-icon"></i>
-                                                    <i class="fa fa-facebook fa-stack-1x network-icon"></i>
-                                                </span>
-                                            </a>
-                        		</li>
-                        		<li class="demin-social-item">
-                                            <a href="https://angel.co/demin" target="_blank" data-toggle="tooltip"
-                                                data-placement="top" title="Follow me on AngelList">
-                                                <span class="fa-stack fa-lg">
-                                                    <i class="fa fa-circle fa-stack-2x circle-icon"></i>
-                                                    <i class="fa fa-angellist fa-stack-1x network-icon"></i>
-                                                </span>
-                                            </a>
-                        		</li>
-                        		<li class="demin-social-item">
-                                            <a href="https://nomadlist.com/@demin" target="_blank" data-toggle="tooltip"
-                                                data-placement="top" title="Follow me on NomadList">
-                                                <span class="fa-stack fa-lg">
-                                                    <i class="fa fa-circle fa-stack-2x circle-icon"></i>
-                                                    <i class="fa fa-map fa-stack-1x network-icon"></i>
-                                                </span>
-                                            </a>
-                        		</li>
-                        		<li class="demin-social-item">
-                                            <a href="https://twitter.com/VictorDemin" target="_blank" data-toggle="tooltip"
-                                                data-placement="top" title="Follow me on Twitter">
-                                                <span class="fa-stack fa-lg">
-                                                    <i class="fa fa-circle fa-stack-2x circle-icon"></i>
-                                                    <i class="fa fa-twitter fa-stack-1x network-icon"></i>
-                                                </span>
-                                            </a>
-                        		</li>
-                        	</ul>
-                        
-                            <ul class="demin-extra-information">
-                                    <li><i class="fa fa-map-marker" aria-hidden="true"></i> <b>Barcelona</b>, <b>Spain</b></li>
-                        
-                                    <li><i class="fa fa-at" aria-hidden="true"></i> demmbox@gmail.com</li>
-                        
-                                    <li><i class="fa fa-phone" aria-hidden="true"></i> (+34) 661887353</li>
+                
+                                <p class="demin-summary">I am a Full Stack Developer and Entrepreneur interested in remote jobs and opportunities to build something useful and great. I primary reside in Spain, Barcelona and travel often.</p>
+                
+                                <p class="demin-extra-info">Check out <a href='https://trabeja.com/' target='_blank'>Trabeja.com</a></p>
+                        </div>
+                
+                        <div class="demin-avatar-container">
+                            <img src="/files/builder.jpg" width="250" class="demin-avatar" />
+                        </div>
+                
+                            <ul class="demin-social-links">
+                		<li class="demin-social-item">
+                                    <a href="https://github.com/ruskid" target="_blank" data-toggle="tooltip"
+                                        data-placement="right" title="See my code on Github" id="link-Github">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x circle-icon"></i>
+                                            <i class="fa fa-github fa-stack-1x network-icon"></i>
+                                        </span>
+                                    </a>
+                		</li>
+                		<li class="demin-social-item">
+                                    <a href="https://www.linkedin.com/in/victordemin/" target="_blank" data-toggle="tooltip"
+                                        data-placement="right" title="Connect me on Linkedin" id="link-Linkedin">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x circle-icon"></i>
+                                            <i class="fa fa-linkedin fa-stack-1x network-icon"></i>
+                                        </span>
+                                    </a>
+                		</li>
+                		<li class="demin-social-item">
+                                    <a href="https://www.facebook.com/ruskid" target="_blank" data-toggle="tooltip"
+                                        data-placement="right" title="Add me on Facebook" id="link-Facebook">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x circle-icon"></i>
+                                            <i class="fa fa-facebook fa-stack-1x network-icon"></i>
+                                        </span>
+                                    </a>
+                		</li>
+                		<li class="demin-social-item">
+                                    <a href="https://angel.co/demin" target="_blank" data-toggle="tooltip"
+                                        data-placement="right" title="Follow me on AngelList" id="link-AngelList">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x circle-icon"></i>
+                                            <i class="fa fa-angellist fa-stack-1x network-icon"></i>
+                                        </span>
+                                    </a>
+                		</li>
+                		<li class="demin-social-item">
+                                    <a href="https://nomadlist.com/@demin" target="_blank" data-toggle="tooltip"
+                                        data-placement="right" title="Follow me on NomadList" id="link-NomadList">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x circle-icon"></i>
+                                            <i class="fa fa-map fa-stack-1x network-icon"></i>
+                                        </span>
+                                    </a>
+                		</li>
+                		<li class="demin-social-item">
+                                    <a href="https://vk.com/ruskid" target="_blank" data-toggle="tooltip"
+                                        data-placement="right" title="Add me on Vk.com" id="link-Vkontakte">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x circle-icon"></i>
+                                            <i class="fa fa-vk fa-stack-1x network-icon"></i>
+                                        </span>
+                                    </a>
+                		</li>
+                		<li class="demin-social-item">
+                                    <a href="https://open.spotify.com/user/victor-demin" target="_blank" data-toggle="tooltip"
+                                        data-placement="right" title="Connect me on Spotify" id="link-Spotify">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x circle-icon"></i>
+                                            <i class="fa fa-spotify fa-stack-1x network-icon"></i>
+                                        </span>
+                                    </a>
+                		</li>
+                		<li class="demin-social-item">
+                                    <a href="https://api.whatsapp.com/send?phone=34661887353" target="_blank" data-toggle="tooltip"
+                                        data-placement="right" title="Send me a Whatsapp" id="link-Whatsapp">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x circle-icon"></i>
+                                            <i class="fa fa-whatsapp fa-stack-1x network-icon"></i>
+                                        </span>
+                                    </a>
+                		</li>
+                		<li class="demin-social-item">
+                                    <a href="mailto:demmbox@gmail.com?Subject=Hello" target="_blank" data-toggle="tooltip"
+                                        data-placement="right" title="Send me an Email" id="link-Email">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x circle-icon"></i>
+                                            <i class="fa fa-envelope-square fa-stack-1x network-icon"></i>
+                                        </span>
+                                    </a>
+                		</li>
+                		<li class="demin-social-item">
+                                    <a href="#" target="_blank" data-toggle="tooltip"
+                                        data-placement="right" title="¡Do not click!" id="link-Bomb">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x circle-icon"></i>
+                                            <i class="fa fa-bomb fa-stack-1x network-icon"></i>
+                                        </span>
+                                    </a>
+                		</li>
                             </ul>
-                        
-                </div>
+                    </div>
+                
+            </div>
         </div>
 
-        <div id="particles-js"></div>
-
-        <div id="myModal" class="modal fade bs-example-modal-lg" tabindex="-1"
-         role="dialog" aria-labelledby="myLargeModalLabel">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-
-
-              <img src="/files/giphy1.gif" class="gif-image gif-image-1" alt="Loading" title="Loading" />
-              <img src="/files/giphy2.gif" class="gif-image gif-image-2" alt="Loading" title="Loading" />
-              <img src="/files/giphy3.gif" class="gif-image gif-image-3" alt="Loading" title="Loading" />
-
-    </div>
-  </div>
-</div>
+        <div id="myModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <img src="/files/giphy1.gif" class="gif-image gif-image-1" alt="Loading" title="Loading" />
+                    <img src="/files/giphy2.gif" class="gif-image gif-image-2" alt="Loading" title="Loading" />
+                    <img src="/files/giphy3.gif" class="gif-image gif-image-3" alt="Loading" title="Loading" />
+                </div>
+            </div>
+        </div>
  
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="/js/particles.min.js"></script>
 
         <script>
             $(function () {
@@ -275,8 +347,10 @@ html, body {
                 $('#myModal').modal('hide');
             });
             
-            particlesJS.load('particles-js', '/particles.json', function() {
-                console.log('callback - particles.js config loaded');
+            $("#link-Bomb").on('click', function(e) {
+                e.preventDefault();
+
+                $(".demin-avatar").toggleClass('crazy');
             });
 
         </script>
