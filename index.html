@@ -44,7 +44,7 @@
 }
 
 .demin-avatar-container {
-    z-index: 1;
+    z-index: 10;
 }
 
 .demin-social-links {
@@ -52,6 +52,7 @@
     padding: 0;
     margin: 0;
     margin-left: 5px;
+    z-index: 13;
 }
 
 .demin-social-links > li {
@@ -115,10 +116,14 @@
     border-radius: 50%;
 }
 
-.demin-avatar-container > .demin-avatar.crazy {
+.demin-avatar-container.crazy > .demin-avatar {
     -webkit-animation:spin 4s linear infinite;
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
+}
+
+.demin-avatar-container.crazy {
+    z-index: 15;
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
@@ -137,7 +142,7 @@
     left: 0;
     font-weight: 700;
     letter-spacing: -0.075rem;
-    z-index: 2;
+    z-index: 20;
 }
 
 .demin-summary {
@@ -148,7 +153,7 @@
     font-size: 0.9em;
     font-style: italic;
     background: black;
-    z-index: 2;
+    z-index: 20;
 }
 
 .demin-playwith-info {
@@ -160,7 +165,7 @@
     background: rgba(0, 0, 0, 0.7);
     color:#10fffe;
     white-space: nowrap;
-    z-index: 2;
+    z-index: 20;
 }
 
 .demin-playwith-info > a {
@@ -182,7 +187,7 @@
     font-style: italic;
     background: rgba(0, 0, 0, 0.7);
     color:#00FF7F;
-    z-index: 2;
+    z-index: 20;
 }
 
 .demin-academator-info > a {
@@ -197,6 +202,28 @@
 }
 
 
+.demin-rebrew-info {
+    position: absolute;
+    left: -30px;
+    bottom: -270px;
+    font-size: 0.8em;
+    font-style: italic;
+    background: rgba(0, 0, 0, 0.7);
+    color:#DC4BD9;
+    z-index: 20;
+}
+
+.demin-rebrew-info > a {
+    color:#DC4BD9;
+    text-decoration: underline;
+}
+
+.demin-rebrew-info > a:hover,
+.demin-rebrew-info > a:active,
+.demin-rebrew-info > a:visited{
+    color:#DC4BD9;
+}
+
 .demin-trabeja-info {
     position: absolute;
     left: -30px;
@@ -205,7 +232,7 @@
     font-style: italic;
     background: rgba(0, 0, 0, 0.7);
     color: #FFFD01;
-    z-index: 2;
+    z-index: 20;
 }
 
 .demin-trabeja-info > a {
@@ -302,7 +329,9 @@
                             <p class="demin-playwith-info">☠️️<a href='https://playwith.gg/' target='_blank'>PlayWith.GG</a>️</p>
 
 
-                                <p class="demin-trabeja-info"><a href='https://trabeja.com/' target='_blank'>Trabeja.com</a></p>
+                            <p class="demin-trabeja-info"><a href='https://trabeja.com/' target='_blank'>Trabeja.com</a></p>
+
+                            <p class="demin-rebrew-info"><a href='https://rebrew.io/' target='_blank'>Rebrew.io</a></p>
                         </div>
 
                         <div class="demin-avatar-container">
@@ -458,7 +487,7 @@
             $("#link-Bomb").on('click', function(e) {
                 e.preventDefault();
 
-                $(".demin-avatar").toggleClass('crazy');
+                $(".demin-avatar-container").toggleClass('crazy');
             });
 
         </script>
